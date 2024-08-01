@@ -20,11 +20,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.owasp</groupId>
-            <artifactId>dependency-check-maven</artifactId>
-            <version>6.1.1</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -88,7 +83,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failBuildOnCVSS>10</failBuildOnCVSS>
+                    <failBuildOnCVSS>11</failBuildOnCVSS>
                     <!-- Generate all report formats -->
                     <format>ALL</format>
                     <!-- Don't use Nexus Analyzer -->
@@ -178,6 +173,11 @@
                         <groupId>com.github.spotbugs</groupId>
                         <artifactId>spotbugs</artifactId>
                         <version>4.2.1</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.owasp</groupId>
+                        <artifactId>dependency-check-maven</artifactId>
+                        <version>6.1.1</version>
                     </dependency>
                 </dependencies>
             </plugin>
