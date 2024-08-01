@@ -40,9 +40,9 @@ services:
     environment:
       - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
     ports:
-      - '9000:9000'
+      - '9595:9595'
     expose:
-      - 9000
+      - 9595
 
   myapp:
     image: jtux/spring-boot-demo
