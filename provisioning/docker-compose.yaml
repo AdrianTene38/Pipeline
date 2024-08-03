@@ -39,6 +39,7 @@ services:
       - cicd
     environment:
       - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+      - SONAR_WEB_PORT=9595  # Configurar el puerto interno a 9001
     ports:
       - '9595:9595'
     expose:
